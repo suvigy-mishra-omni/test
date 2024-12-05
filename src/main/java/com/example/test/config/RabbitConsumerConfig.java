@@ -1,5 +1,6 @@
 package com.example.test.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.support.converter.MessageConverter;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@Slf4j
 @Configuration
 public class RabbitConsumerConfig {
   ConnectionFactory connectionFactory;
@@ -21,6 +23,8 @@ public class RabbitConsumerConfig {
 
   @Bean
   public SimpleRabbitListenerContainerFactory listenerContainerFactory() {
+    log.info("Creating Listener Container Factory");
+
     SimpleRabbitListenerContainerFactory listenerContainerFactory =
         new SimpleRabbitListenerContainerFactory();
 

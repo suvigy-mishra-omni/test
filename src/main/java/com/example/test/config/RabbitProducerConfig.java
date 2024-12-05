@@ -1,5 +1,6 @@
 package com.example.test.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -9,35 +10,54 @@ import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@Slf4j
 @Configuration
 public class RabbitProducerConfig {
+  public static final String DEFAULT_QUEUE = "default-queue";
+  public static final String CUSTOM_QUEUE = "custom-queue";
+  public static final String DIRECT_EXCHANGE = "direct-exchange";
+  public static final String DEFAULT_ROUTING_KEY = "default";
+  public static final String CUSTOM_ROUTING_KEY = "custom";
+
   @Bean
   public Queue defaultQueue() {
-    return new Queue("default-queue");
+    log.info("Creating Default Queue");
+
+    return new Queue(DEFAULT_QUEUE);
   }
 
   @Bean
   public Queue customQueue() {
-    return new Queue("custom-queue");
+    log.info("Creating Custom Queue");
+
+    return new Queue(CUSTOM_QUEUE);
   }
 
   @Bean
   public DirectExchange directExchange() {
-    return new DirectExchange("direct-exchange");
+    log.info("Creating Direct Exchange");
+
+    return new DirectExchange(DIRECT_EXCHANGE);
   }
 
   @Bean
   public Binding defaultQueueBiding(Queue defaultQueue, DirectExchange directExchange) {
-    return BindingBuilder.bind(defaultQueue).to(directExchange).with("default");
+    log.info("Creating Default Queue Biding");
+
+    return BindingBuilder.bind(defaultQueue).to(directExchange).with(DEFAULT_ROUTING_KEY);
   }
 
   @Bean
   Binding customQueueBiding(Queue customQueue, DirectExchange directExchange) {
-    return BindingBuilder.bind(customQueue).to(directExchange).with("custom");
+    log.info("Creating Custom Queue Binding");
+
+    return BindingBuilder.bind(customQueue).to(directExchange).with(CUSTOM_ROUTING_KEY);
   }
 
   @Bean
   public ConnectionFactory connectionFactory() {
+    log.info("Creating Connection Factory for Rabbit");
+
     CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
 
     connectionFactory.setHost("localhost");
@@ -55,6 +75,8 @@ public class RabbitProducerConfig {
 
   @Bean
   public AmqpTemplate template(ConnectionFactory connectionFactory) {
+    log.info("Creating Template");
+
     RabbitTemplate template = new RabbitTemplate(connectionFactory);
 
     template.setMessageConverter(messageConverter());
