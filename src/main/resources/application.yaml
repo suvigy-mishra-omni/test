@@ -1,0 +1,17 @@
+spring:
+  # PgSQL Local
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+
+  # Mongo
+  data:
+    mongodb:
+      uri: mongodb://Test:Test@localhost:27016
+      database: test
+
+  # Liquibase
+  liquibase:
+    enabled: false
+
