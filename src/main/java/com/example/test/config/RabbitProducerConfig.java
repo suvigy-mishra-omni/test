@@ -1,5 +1,6 @@
 package com.example.test.config;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
@@ -15,9 +16,11 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitProducerConfig {
   public static final String DEFAULT_QUEUE = "default-queue";
   public static final String CUSTOM_QUEUE = "custom-queue";
+  public static final String CUSTOM_BULK_QUEUE = "custom-bulk-queue";
   public static final String DIRECT_EXCHANGE = "direct-exchange";
   public static final String DEFAULT_ROUTING_KEY = "default";
   public static final String CUSTOM_ROUTING_KEY = "custom";
+  public static final String CUSTOM_BULK_ROUTING_KEY = "custom-bulk";
 
   @Bean
   public Queue defaultQueue() {
@@ -31,6 +34,13 @@ public class RabbitProducerConfig {
     log.info("Creating Custom Queue");
 
     return new Queue(CUSTOM_QUEUE);
+  }
+
+  @Bean
+  public Queue customBulkQueue() {
+    log.info("Creating Custom Bulk Queue");
+
+    return new Queue(CUSTOM_BULK_QUEUE);
   }
 
   @Bean
@@ -55,6 +65,13 @@ public class RabbitProducerConfig {
   }
 
   @Bean
+  Binding customBulkQueueBiding(Queue customBulkQueue, DirectExchange directExchange) {
+    log.info("Creating Custom Bulk Queue Binding");
+
+    return BindingBuilder.bind(customBulkQueue).to(directExchange).with(CUSTOM_BULK_ROUTING_KEY);
+  }
+
+  @Bean
   public ConnectionFactory connectionFactory() {
     log.info("Creating Connection Factory for Rabbit");
 
@@ -70,7 +87,9 @@ public class RabbitProducerConfig {
 
   @Bean
   public MessageConverter messageConverter() {
-    return new Jackson2JsonMessageConverter();
+    ObjectMapper objectMapper = new ObjectMapper();
+
+    return new Jackson2JsonMessageConverter(objectMapper);
   }
 
   @Bean
