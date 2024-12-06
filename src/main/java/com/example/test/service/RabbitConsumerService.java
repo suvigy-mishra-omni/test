@@ -6,7 +6,6 @@ import com.rabbitmq.client.Channel;
 import java.io.IOException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Comparator;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -40,21 +39,13 @@ public class RabbitConsumerService {
       queues = CUSTOM_BULK_QUEUE,
       ackMode = "MANUAL",
       containerFactory = "customBulkListenerContainerFactory")
-  public void customQueueBulkListener(List<Message<String>> message, Channel channel)
+  public void customQueueBulkListener(List<Message<String>> messages, Channel channel)
       throws IOException {
-    log.info("Received {} messages", message.size());
+    log.info("Received {} messages", messages.size());
 
-    log.info("Messages => {}", message.stream().map(Message::getPayload));
-
-    Long maxTag =
-        (Long)
-            message.stream()
-                .max((Comparator.comparingLong(o -> (Long) o.getHeaders().get("amqp_deliveryTag"))))
-                .get()
-                .getHeaders()
-                .get("amqp_deliveryTag");
-
-    channel.basicAck(maxTag, true);
+    for (Message<String> message : messages) {
+      channel.basicAck((Long) message.getHeaders().get("amqp_deliveryTag"), false);
+    }
   }
 
   public String getMessage(String currentMessage) {
