@@ -54,8 +54,8 @@ public class RabbitConsumerConfig {
   }
 
   @Bean
-  public SimpleRabbitListenerContainerFactory customBulkListenerContainerFactory() {
-    log.info("Creating Bulk Listener Container Factory");
+  public SimpleRabbitListenerContainerFactory customBatchListenerContainerFactory() {
+    log.info("Creating Batch Listener Container Factory");
 
     SimpleRabbitListenerContainerFactory listenerContainerFactory =
         new SimpleRabbitListenerContainerFactory();

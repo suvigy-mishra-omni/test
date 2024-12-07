@@ -16,11 +16,11 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitProducerConfig {
   public static final String DEFAULT_QUEUE = "default-queue";
   public static final String CUSTOM_QUEUE = "custom-queue";
-  public static final String CUSTOM_BULK_QUEUE = "custom-bulk-queue";
+  public static final String CUSTOM_BATCH_QUEUE = "custom-batch-queue";
   public static final String DIRECT_EXCHANGE = "direct-exchange";
   public static final String DEFAULT_ROUTING_KEY = "default";
   public static final String CUSTOM_ROUTING_KEY = "custom";
-  public static final String CUSTOM_BULK_ROUTING_KEY = "custom-bulk";
+  public static final String CUSTOM_BATCH_ROUTING_KEY = "custom-batch";
 
   @Bean
   public Queue defaultQueue() {
@@ -37,10 +37,10 @@ public class RabbitProducerConfig {
   }
 
   @Bean
-  public Queue customBulkQueue() {
-    log.info("Creating Custom Bulk Queue");
+  public Queue customBatchQueue() {
+    log.info("Creating Custom Batch Queue");
 
-    return new Queue(CUSTOM_BULK_QUEUE);
+    return new Queue(CUSTOM_BATCH_QUEUE);
   }
 
   @Bean
@@ -65,10 +65,10 @@ public class RabbitProducerConfig {
   }
 
   @Bean
-  Binding customBulkQueueBiding(Queue customBulkQueue, DirectExchange directExchange) {
-    log.info("Creating Custom Bulk Queue Binding");
+  Binding customBatchQueueBiding(Queue customBatchQueue, DirectExchange directExchange) {
+    log.info("Creating Custom Batch Queue Binding");
 
-    return BindingBuilder.bind(customBulkQueue).to(directExchange).with(CUSTOM_BULK_ROUTING_KEY);
+    return BindingBuilder.bind(customBatchQueue).to(directExchange).with(CUSTOM_BATCH_ROUTING_KEY);
   }
 
   @Bean

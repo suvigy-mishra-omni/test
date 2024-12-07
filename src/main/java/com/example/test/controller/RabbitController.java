@@ -22,8 +22,8 @@ public class RabbitController {
           rabbitProducerService.sendToCustomQueue(body.getMessage());
           break;
 
-        case "CUSTOM-BULK":
-          rabbitProducerService.sendToCustomBulkQueue(body.getMessage());
+        case "CUSTOM-BATCH":
+          rabbitProducerService.sendToCustomBatchQueue(body.getMessage());
           break;
 
         default:

@@ -36,10 +36,10 @@ public class RabbitConsumerService {
   }
 
   @RabbitListener(
-      queues = CUSTOM_BULK_QUEUE,
+      queues = CUSTOM_BATCH_QUEUE,
       ackMode = "MANUAL",
-      containerFactory = "customBulkListenerContainerFactory")
-  public void customQueueBulkListener(List<Message<String>> messages, Channel channel)
+      containerFactory = "customBatchListenerContainerFactory")
+  public void customQueueBatchListener(List<Message<String>> messages, Channel channel)
       throws IOException {
     log.info("Received {} messages", messages.size());
 

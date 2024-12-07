@@ -20,8 +20,8 @@ public class RabbitProducerService {
     template.convertAndSend(DIRECT_EXCHANGE, CUSTOM_ROUTING_KEY, customPayload(message));
   }
 
-  public void sendToCustomBulkQueue(String message) {
-    template.convertAndSend(DIRECT_EXCHANGE, CUSTOM_BULK_ROUTING_KEY, customPayload(message));
+  public void sendToCustomBatchQueue(String message) {
+    template.convertAndSend(DIRECT_EXCHANGE, CUSTOM_BATCH_ROUTING_KEY, customPayload(message));
   }
 
   public String customPayload(String message) {
