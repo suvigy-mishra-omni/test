@@ -16,11 +16,13 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitProducerConfig {
   public static final String DEFAULT_QUEUE = "default-queue";
   public static final String CUSTOM_QUEUE = "custom-queue";
-  public static final String CUSTOM_BATCH_QUEUE = "custom-batch-queue";
+  public static final String CUSTOM_BATCH_QUEUE_1 = "custom-batch-queue-1";
+  public static final String CUSTOM_BATCH_QUEUE_2 = "custom-batch-queue-2";
   public static final String DIRECT_EXCHANGE = "direct-exchange";
   public static final String DEFAULT_ROUTING_KEY = "default";
   public static final String CUSTOM_ROUTING_KEY = "custom";
-  public static final String CUSTOM_BATCH_ROUTING_KEY = "custom-batch";
+  public static final String CUSTOM_BATCH_ROUTING_KEY_1 = "custom-batch-1";
+  public static final String CUSTOM_BATCH_ROUTING_KEY_2 = "custom-batch-2";
 
   @Bean
   public Queue defaultQueue() {
@@ -37,10 +39,17 @@ public class RabbitProducerConfig {
   }
 
   @Bean
-  public Queue customBatchQueue() {
+  public Queue customBatchQueue1() {
+    log.info("Creating Custom Batch Queue 1");
+
+    return new Queue(CUSTOM_BATCH_QUEUE_1);
+  }
+
+  @Bean
+  public Queue customBatchQueue2() {
     log.info("Creating Custom Batch Queue");
 
-    return new Queue(CUSTOM_BATCH_QUEUE);
+    return new Queue(CUSTOM_BATCH_QUEUE_2);
   }
 
   @Bean
@@ -65,10 +74,17 @@ public class RabbitProducerConfig {
   }
 
   @Bean
-  Binding customBatchQueueBiding(Queue customBatchQueue, DirectExchange directExchange) {
-    log.info("Creating Custom Batch Queue Binding");
+  Binding customBatchQueueBiding1(Queue customBatchQueue1, DirectExchange directExchange) {
+    log.info("Creating Custom Batch Queue 1 Binding");
 
-    return BindingBuilder.bind(customBatchQueue).to(directExchange).with(CUSTOM_BATCH_ROUTING_KEY);
+    return BindingBuilder.bind(customBatchQueue1).to(directExchange).with(CUSTOM_BATCH_ROUTING_KEY_1);
+  }
+
+  @Bean
+  Binding customBatchQueueBiding2(Queue customBatchQueue2, DirectExchange directExchange) {
+    log.info("Creating Custom Batch Queue 2 Binding");
+
+    return BindingBuilder.bind(customBatchQueue2).to(directExchange).with(CUSTOM_BATCH_ROUTING_KEY_2);
   }
 
   @Bean
