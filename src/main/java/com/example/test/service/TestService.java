@@ -21,10 +21,6 @@ public class TestService {
 
     Map<String, Object> init = init();
     Map<String, Object> dataSource = dataSource();
-    test(
-        (Template) init.get("template"),
-        (ArrayList<TemplatePlaceholder>) init.get("placeholders"),
-        dataSource);
   }
 
   private Map<String, Object> init() {
