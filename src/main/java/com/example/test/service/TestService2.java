@@ -1,5 +1,6 @@
 package com.example.test.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.TemplateEngine;
@@ -8,12 +9,12 @@ import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.dialect.SpringStandardDialect;
 import org.thymeleaf.templateresolver.StringTemplateResolver;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class TestService2 {
@@ -27,116 +28,227 @@ public class TestService2 {
     Context context = new Context();
 //    Map<String, String> map = new HashMap<>();
 //    map.put("loanAccountNumber", "test");
-    Map<String, String> dataMap = new HashMap<>();
-    dataMap.put("customerName", "Vyom Bajpeyee");
-    dataMap.put("loanAccountNumber", "MCFL_101_000002E7");
-    dataMap.put("cuidNo", "");
-    dataMap.put("ckycNo", "12345678901234");
-    dataMap.put("loanAmount", "1000000.00");
-    dataMap.put("applicationType", "GOLD SUB-PRODUCT");
-    dataMap.put("scheme", "MGL-7");
-    dataMap.put("loanPurpose", "Gold Loan for Debt Clearance");
-    dataMap.put("applicationDate", "03-04-2025");
-    dataMap.put("sourceOfIncome", "Salaried");
-    dataMap.put("natureOfOccupation", "no");
-    dataMap.put("nameOfEmployer", "your truly");
-    dataMap.put("typeOfActivity", "letter writing");
-    dataMap.put("landType", "gmail");
-    dataMap.put("landHolding", "10");
-    dataMap.put("loanCategory", "Individual");
-    dataMap.put("grossAnnualIncome", "20-25L");
-    dataMap.put("borrowerPhoto", "");
-    dataMap.put("applicantName", "");
-    dataMap.put("maidenName", "");
-    dataMap.put("gender", "Male");
-    dataMap.put("dateOfBirth", "03-05-2010");
-    dataMap.put("panNumber", "BWFPB4464B");
-    dataMap.put("aadharNumber", "XXXX-XXXX-5731");
-    dataMap.put("fatherName", "MS");
-    dataMap.put("motherName", "Seema");
-    dataMap.put("maritalStatus", "Married");
-    dataMap.put("spouseName", "Ayushi");
-    dataMap.put("nationality", "Indian");
-    dataMap.put("religion", "hindu");
-    dataMap.put("caste", "hindu");
-    dataMap.put("qualification", "Btech");
-    dataMap.put("email", "vyombajpeyee@gmail.com");
-    dataMap.put("mobile", "8131047527");
-    dataMap.put("idProof", "PAN");
-    dataMap.put("addressProof", "Aadhaar");
-    dataMap.put("currentAddress", "");
-    dataMap.put("city", "");
-    dataMap.put("pincode", "208010");
-    dataMap.put("landmark", "jajmau");
-    dataMap.put("state", "up");
-    dataMap.put("residentialTel", "");
-    dataMap.put("yearsAtCurrentResidence", "6");
-    dataMap.put("permanentAddress", "");
-    dataMap.put("permanentCity", "");
-    dataMap.put("permanentPincode", "");
-    dataMap.put("permanentLandmark", "");
-    dataMap.put("permanentState", "");
-    dataMap.put("permanentMobile", "");
-    dataMap.put("srNo", "4");
-    dataMap.put("particular", "ring");
-    dataMap.put("units", "20");
-    dataMap.put("carat", "24");
-    dataMap.put("totalWeight", "600"); // Overwrites earlier "200"
-    dataMap.put("grossWeight", "200");
-    dataMap.put("value", "1800000.00");
-    dataMap.put("goldPacketNo", "74db125c-8002-4678-9d10-87aada2832f1");
-    dataMap.put("collateralPhoto", "");
-    dataMap.put("loanStartDate", "");
-    dataMap.put("principalAmount", "");
-    dataMap.put("tenure", "72");
-    dataMap.put("baseInterestRate", "12.00000");
-    dataMap.put("penalCharge", "");
-    dataMap.put("principalDueDate", "");
-    dataMap.put("principalRepaymentFrequency", "4");
-    dataMap.put("interestDueDate", "");
-    dataMap.put("interestRepaymentFrequency", "");
-    dataMap.put("modeOfComputation", "");
-    dataMap.put("bankName", "ICICI");
-    dataMap.put("branchName", "Koramangala");
-    dataMap.put("ifscCode", "ICICI080908");
-    dataMap.put("accountNumber", "2345678");
-    dataMap.put("accountType", "Current");
-    dataMap.put("borrowerName", "defaultBorrowerName");
-    dataMap.put("rateOfInterest", "12.00000");
-    dataMap.put("interestFrequency", "");
-    dataMap.put("riskCategory", "");
-    dataMap.put("dateToday", "05-04-2025");
-    dataMap.put("customerId", "MCFL_101_000002E7");
-    dataMap.put("goldPacketNumber", "");
-    dataMap.put("loanAccountNo", "MCFL_101_000002E7");
-    dataMap.put("loanDate", "");
-    dataMap.put("totalValue", "");
-    dataMap.put("nameOfTheValuer1", "Deepesh");
-    dataMap.put("valuer1EmployeeCode", "");
-    dataMap.put("valuer1Signature", "Deepesh");
-    dataMap.put("nameOfTheValuer2", "Deepesh");
-    dataMap.put("valuer2employeeCode", "");
-    dataMap.put("valuer2signature", "Deepesh");
-    dataMap.put("disbursalDate", "");
-    dataMap.put("deductionDetails", "");
-    dataMap.put("totalChargeAmount", "");
-    dataMap.put("totalCollectedUpfront", "");
-    dataMap.put("totalDeductedCharges", "");
-    dataMap.put("inCash", "");
-    dataMap.put("otherThanCash", "");
-    dataMap.put("beneficiaryName", "");
-    dataMap.put("disbursalAmountInWords", "2499400.00");
-    dataMap.put("utrNo", "");
-    dataMap.put("remarks", "");
-    dataMap.put("paymentMethod", "");
+    Map<String, Object> data = new HashMap<>();
+
+    data.put("customerName", "Deepesh  test-suite");
+    data.put("loanAccountNumber", "APMCFLGL10100000942");
+    data.put("cuidNo", "5ec5df8a-b937-40a4-ab70-0c6f9e5dc096");
+    data.put("ckycNo", "86768765465467");
+    data.put("loanAmount", "1000.00");
+    data.put("applicationType", "Fresh Loan");
+    data.put("scheme", "MGL-7");
+    data.put("loanPurpose", "Education Fees");
+    data.put("applicationDate", "16-04-2025");
+    data.put("sourceOfIncome", "Agriculture");
+    data.put("natureOfOccupation", "");
+    data.put("nameOfEmployer", "");
+    data.put("typeOfActivity", "");
+    data.put("landType", "Agricultural");
+    data.put("landHolding", "123");
+    data.put("loanCategory", "Individual");
+    data.put("grossAnnualIncome", "234567");
+    data.put("borrowerPhoto", null);
+    data.put("applicantName", "Deepesh  test-suite");
+    data.put("maidenName", "Odessa Curry");
+    data.put("gender", "Male");
+    data.put("dateOfBirth", "09-04-2007");
+    data.put("panNumber", "QWEDS4565H");
+    data.put("aadharNumber", "XXXX-XXXX-7113");
+    data.put("fatherName", "Rafai");
+    data.put("motherName", "masthan");
+    data.put("maritalStatus", "Other");
+    data.put("spouseName", "no");
+    data.put("nationality", "Indian");
+    data.put("religion", "hindu");
+    data.put("caste", "hindu");
+    data.put("qualification", "intermediate");
+    data.put("email", "Rafi@gmail.com");
+    data.put("mobile", "9889456789");
+    data.put("idProof", "PAN");
+    data.put("addressProof", "Aadhaar");
+    data.put("currentAddress", "");
+    data.put("city", "");
+    data.put("pincode", "517325");
+    data.put("landmark", "New bypass");
+    data.put("state", "Andhra Pradesh");
+    data.put("residentialTel", null);
+    data.put("yearsAtCurrentResidence", "4");
+    data.put("permanentAddress", "");
+    data.put("permanentCity", "");
+    data.put("permanentPincode", "");
+    data.put("permanentLandmark", "");
+    data.put("permanentState", "");
+    data.put("permanentMobile", null);
+
+    List<Map<String, Object>> pledgedArticles = new ArrayList<>();
+    Map<String, Object> article1 = new HashMap<>();
+    article1.put("srNo", "1");
+    article1.put("particular", "Necklace");
+    article1.put("units", "345");
+    article1.put("carat", "21");
+    article1.put("totalWeight", "345");
+    article1.put("grossWeight", "345");
+    article1.put("value", "8265886.05");
+    article1.put("goldPacketNo", "83945972-f844-4825-a641-019b8daf1b9f");
+    pledgedArticles.add(article1);
+
+    Map<String, Object> article2 = new HashMap<>();
+    article2.put("srNo", "2");
+    article2.put("particular", "Bangles");
+    article2.put("units", "123");
+    article2.put("carat", "18");
+    article2.put("totalWeight", "123");
+    article2.put("grossWeight", "123");
+    article2.put("value", "2525972.28");
+    article2.put("goldPacketNo", "6e26226b-10a2-4128-b6b0-624e3d66a6f8");
+    pledgedArticles.add(article2);
+
+    data.put("pledgedArticles", pledgedArticles);
+
+    data.put("totalWeight", "468");
+    data.put("collateralPhoto", "https://eks-common-uat2-..."); // truncated for brevity
+    data.put("loanStartDate", "");
+    data.put("principalAmount", "1000.00");
+    data.put("tenure", "3");
+    data.put("baseInterestRate", "12.00000");
+    data.put("penalCharge", "");
+    data.put("principalDueDate", "");
+    data.put("principalRepaymentFrequency", "Quarterly");
+    data.put("interestDueDate", "");
+    data.put("interestRepaymentFrequency", "Quarterly");
+    data.put("modeOfComputation", "Fixed");
+    data.put("bankName", "Harper Barr");
+    data.put("branchName", "Hollee Dominguez");
+    data.put("ifscCode", "1234567UYT");
+    data.put("accountNumber", "1234566543");
+    data.put("accountType", "Current");
+    data.put("borrowerName", "Deepesh  test-suite");
+    data.put("rateOfInterest", "12.00000");
+    data.put("interestFrequency", "Fixed");
+    data.put("riskCategory", "high");
+    data.put("dateToday", "28-04-2025");
+    data.put("customerId", "5ec5df8a-b937-40a4-ab70-0c6f9e5dc096");
+    data.put("goldPacketNumber", "APMCFLGL10100000942");
+    data.put("loanAccountNo", "APMCFLGL10100000942");
+    data.put("loanDate", "");
+    data.put("totalValue", "10791858.33");
+    data.put("nameOfTheValuer1", "");
+    data.put("valuer1EmployeeCode", "f958d050-c4bd-4209-b12d-679b0ca12bd5");
+    data.put("valuer1Signature", "");
+    data.put("nameOfTheValuer2", "");
+    data.put("valuer2employeeCode", "36fc170d-ac8f-49f4-b427-021d10396e0b");
+    data.put("valuer2signature", "");
+    data.put("valuationPhoto", null);
+    data.put("disbursalDate", "");
+
+    List<Map<String, Object>> deductionDetails = new ArrayList<>();
+    String[][] deductions = {
+            {"1", "Processing Fees"},
+            {"2", "Insurance Amount"},
+            {"3", "Documentation Charges"},
+            {"4", "Credit Report Charges"},
+            {"5", "Valuation Charges"},
+            {"6", "Franking Charges"}
+    };
+    for (String[] deduction : deductions) {
+      Map<String, Object> entry = new HashMap<>();
+      entry.put("srNo", deduction[0]);
+      entry.put("natureOfCharges", deduction[1]);
+      entry.put("charges", "Rupees");
+      entry.put("chargeAmount", "0");
+      entry.put("collectedUpfront", "true");
+      entry.put("deductedCharges", "true");
+      deductionDetails.add(entry);
+    }
+    data.put("deductionDetails", deductionDetails);
+
+    data.put("totalChargeAmount", "0.00");
+    data.put("totalCollectedUpfront", "");
+    data.put("totalDeductedCharges", "");
+    data.put("inCash", "");
+    data.put("otherThanCash", "");
+    data.put("beneficiaryName", "");
+    data.put("disbursalAmountInWords", "1000.00");
+    data.put("utrNo", "");
+    data.put("remarks", "");
+    data.put("paymentMethod", "");
 
 
     templateEngine.setTemplateResolver(new StringTemplateResolver());
+    context.setVariables(Collections.unmodifiableMap(data));
 //    templateEngine.addDialect(new SpringStandardDialect());
-    String templateHtml = new String(Files.readAllBytes(Paths.get("src/main/resources/index1.txt")), StandardCharsets.UTF_8);
+    String templateHtml = new String(Files.readAllBytes(Paths.get("src/main/resources/index2.txt")), StandardCharsets.UTF_8);
     String processedTemplate = templateEngine.process(templateHtml, context);
 
     System.out.println("done");
+  }
+
+  public void test2() throws IOException {
+
+    Map<String, Object> data = new HashMap<>();
+
+    List<Map<String, String>> borrowerDetails = Arrays.asList(
+            createEntry("Customer Name", "Vyom Bajpeyee"),
+            createEntry("Loan Account Number", "APMCFLGL10100000896"),
+            createEntry("Gender", "Male"),
+            createEntry("Date of Birth", "24-06-1995"),
+            createEntry("PAN Number", "BWFPB4464B"),
+            createEntry("Aadhar Number", "XXXX-XXXX-5731"),
+            createEntry("Mobile Number", "8131047527")
+    );
+
+    List<Map<String, String>> collateralDetails = Arrays.asList(
+            createEntry("Asset Type", "Physical"),
+            createEntry("Bin Number", "1342")
+    );
+
+    List<Map<String, String>> valuationDetails = Arrays.asList(
+            createEntry("Remarks", "checked again"),
+            createEntry("Employee ID", "0895db48-37c5-491b-b5a2-c05183bf76ad"),
+            createEntry("Name of the Valuer", null),
+            createEntry("Rate per gram (in INR)", ""),
+            createEntry("Units (in nos.)", "10"),
+            createEntry("Total Weight (in gms)", "100"),
+            createEntry("Deductions (in gms)", "10"),
+            createEntry("Net Weight (in gms)", "90"),
+            createEntry("Value (in INR)", "2070000.00")
+    );
+
+    List<Map<String, String>> creditDecisioningDetails = Arrays.asList(
+            createEntry("Sanctioned Loan Amount", "1000000.00"),
+            createEntry("Loan Tenure (in months)", "com.saison.omni.appform.entity.LoanTenure@142fc5b9"),
+            createEntry("No. of Instalments", "4"),
+            createEntry("Type of Instalment", "Quarterly"),
+            createEntry("Interest Rate Type", "Fixed"),
+            createEntry("Rate of Interest (in %)", "20.00000"),
+            createEntry("Processing Fees (in INR)", "0.00"),
+            createEntry("Insurance Premium (in INR)", "0.00"),
+            createEntry("Documentation Charges (in INR)", "0"),
+            createEntry("Credit Report Charges", "0"),
+            createEntry("Valuation Charges", "0"),
+            createEntry("Franking charges", "0"),
+            createEntry("Net Loan Amount", "1000000.00")
+    );
+
+    data.put("borrowerDetails", borrowerDetails);
+    data.put("collateralDetails", collateralDetails);
+    data.put("valuationDetails", valuationDetails);
+    data.put("creditDecisioningDetails", creditDecisioningDetails);
+
+    TemplateEngine templateEngine = new SpringTemplateEngine();
+    Context context = new Context();
+    templateEngine.setTemplateResolver(new StringTemplateResolver());
+    context.setVariables(Collections.unmodifiableMap(data));
+    String templateHtml = new String(Files.readAllBytes(Paths.get("src/main/resources/index2.txt")), StandardCharsets.UTF_8);
+    String processedTemplate = templateEngine.process(templateHtml, context);
+    System.out.println("done");
+
+  }
+  private static Map<String, String> createEntry(String label, String value) {
+    Map<String, String> map = new HashMap<>();
+    map.put("label", label);
+    map.put("value", value); // null-safe
+    return map;
   }
 
 }

@@ -1,0 +1,134 @@
+{
+  "borrowerDetails": [
+    {
+      "label": "Customer Name",
+      "value": "Vyom Bajpeyee"
+    },
+    {
+      "label": "Loan Account Number",
+      "value": "APMCFLGL10100000896"
+    },
+    {
+      "label": "Gender",
+      "value": "Male"
+    },
+    {
+      "label": "Date of Birth",
+      "value": "24-06-1995"
+    },
+    {
+      "label": "PAN Number",
+      "value": "BWFPB4464B"
+    },
+    {
+      "label": "Aadhar Number",
+      "value": "XXXX-XXXX-5731"
+    },
+    {
+      "label": "Mobile Number",
+      "value": "8131047527"
+    }
+  ],
+  "collateralDetails": [
+    {
+      "label": "Asset Type",
+      "value": "Physical"
+    },
+    {
+      "label": "Bin Number",
+      "value": "1342"
+    }
+  ],
+  "valuationDetails": [
+    {
+      "label": "Remarks",
+      "value": "checked again"
+    },
+    {
+      "label": "Employee ID",
+      "value": "0895db48-37c5-491b-b5a2-c05183bf76ad"
+    },
+    {
+      "label": "Name of the Valuer",
+      "value": null
+    },
+    {
+      "label": "Rate per gram (in INR)",
+      "value": ""
+    },
+    {
+      "label": "Units (in nos.)",
+      "value": "10"
+    },
+    {
+      "label": "Total Weight (in gms)",
+      "value": "100"
+    },
+    {
+      "label": "Deductions (in gms)",
+      "value": "10"
+    },
+    {
+      "label": "Net Weight (in gms)",
+      "value": "90"
+    },
+    {
+      "label": "Value (in INR)",
+      "value": "2070000.00"
+    }
+  ],
+  "creditDecisioningDetails": [
+    {
+      "label": "Sanctioned Loan Amount",
+      "value": "1000000.00"
+    },
+    {
+      "label": "Loan Tenure (in months)",
+      "value": "com.saison.omni.appform.entity.LoanTenure@142fc5b9"
+    },
+    {
+      "label": "No. of Instalments",
+      "value": "4"
+    },
+    {
+      "label": "Type of Instalment",
+      "value": "Quarterly"
+    },
+    {
+      "label": "Interest Rate Type",
+      "value": "Fixed"
+    },
+    {
+      "label": "Rate of Interest (in %)",
+      "value": "20.00000"
+    },
+    {
+      "label": "Processing Fees (in INR)",
+      "value": "0.00"
+    },
+    {
+      "label": "Insurance Premium (in INR)",
+      "value": "0.00"
+    },
+    {
+      "label": "Documentation Charges (in INR)",
+      "value": "0"
+    },
+    {
+      "label": "Credit Report Charges",
+      "value": "0"
+    },
+    {
+      "label": "Valuation Charges",
+      "value": "0"
+    },
+    {
+      "label": "Franking charges",
+      "value": "0"
+    },
+    {
+      "label": "Net Loan Amount",
+      "value": "1000000.00"
+    }
+  ]
+}
