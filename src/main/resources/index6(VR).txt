@@ -1,0 +1,2810 @@
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="zu5pgt" data-token-hash="l3dra3"
+        data-cache-path="l3dra3|Shared|ant">
+        :where(.css-dev-only-do-not-override-mzwlov) a {
+            color: #1677ff;
+            text-decoration: none;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            transition: color 0.3s;
+            -webkit-text-decoration-skip: objects;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov) a:hover {
+            color: #69b1ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov) a:active {
+            color: #0958d9;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov) a:active,
+        :where(.css-dev-only-do-not-override-mzwlov) a:hover {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov) a:focus {
+            text-decoration: none;
+            outline: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov) a[disabled] {
+            color: rgba(0, 0, 0, 0.25);
+            cursor: not-allowed;
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1arlsrm" data-token-hash="l3dra3"
+        data-cache-path="l3dra3|Typography-Typography|ant-typography|anticon">
+        @media print {
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                    "Noto Color Emoji";
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography::after {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class^="ant-typography"],
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class*=" ant-typography"] {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class^="ant-typography"]::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class*=" ant-typography"]::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class^="ant-typography"]::after,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography [class*=" ant-typography"]::after {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography {
+                color: rgba(0, 0, 0, 0.88);
+                word-break: break-word;
+                line-height: 1.5714285714285714;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-secondary {
+                color: rgba(0, 0, 0, 0.45);
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-success {
+                color: #52c41a;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-warning {
+                color: #faad14;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-danger {
+                color: #ff4d4f;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-danger:active,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-danger:focus {
+                color: #d9363e;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-danger:hover {
+                color: #ff7875;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-disabled {
+                color: rgba(0, 0, 0, 0.25);
+                cursor: not-allowed;
+                user-select: none;
+            }
+
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p {
+                margin-bottom: 1em;
+            }
+
+            h1:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h1,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h1>textarea,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1 {
+                margin-bottom: 0.5em;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 1.2105263157894737;
+            }
+
+            h2:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h2,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h2>textarea,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2 {
+                margin-bottom: 0.5em;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 1.2666666666666666;
+            }
+
+            h3:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h3,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h3>textarea,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3 {
+                margin-bottom: 0.5em;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1.3333333333333333;
+            }
+
+            h4:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h4,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h4>textarea,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4 {
+                margin-bottom: 0.5em;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.4;
+            }
+
+            h5:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h5,
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-h5>textarea,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5 {
+                margin-bottom: 0.5em;
+                color: rgba(0, 0, 0, 0.88);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography+h1.ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography+h2.ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography+h3.ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography+h4.ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography+h5.ant-typography {
+                margin-top: 1.2em;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography div+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography li+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5+h1,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography div+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography li+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5+h2,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography div+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography li+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5+h3,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography div+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography li+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5+h4,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography div+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography li+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography p+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h1+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h2+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h3+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h4+h5,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography h5+h5 {
+                margin-top: 1.2em;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography code {
+                margin: 0 0.2em;
+                padding-inline: 0.4em;
+                padding-block: 0.2em 0.1em;
+                font-size: 85%;
+                font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                    Courier, monospace;
+                background: rgba(150, 150, 150, 0.1);
+                border: 1px solid rgba(100, 100, 100, 0.2);
+                border-radius: 3px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography kbd {
+                margin: 0 0.2em;
+                padding-inline: 0.4em;
+                padding-block: 0.15em 0.1em;
+                font-size: 90%;
+                font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                    Courier, monospace;
+                background: rgba(150, 150, 150, 0.06);
+                border: 1px solid rgba(100, 100, 100, 0.2);
+                border-bottom-width: 2px;
+                border-radius: 3px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography mark {
+                padding: 0;
+                background-color: #ffe58f;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography u,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ins {
+                text-decoration: underline;
+                text-decoration-skip-ink: auto;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography s,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography del {
+                text-decoration: line-through;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography strong {
+                font-weight: 600;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ol {
+                margin-inline: 0;
+                margin-block: 0 1em;
+                padding: 0;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul li,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ol li {
+                margin-inline: 20px 0;
+                margin-block: 0;
+                padding-inline: 4px 0;
+                padding-block: 0;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul {
+                list-style-type: circle;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ul ul {
+                list-style-type: disc;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography ol {
+                list-style-type: decimal;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography pre,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography blockquote {
+                margin: 1em 0;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography pre {
+                padding: 0.4em 0.6em;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                background: rgba(150, 150, 150, 0.1);
+                border: 1px solid rgba(100, 100, 100, 0.2);
+                border-radius: 3px;
+                font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+                    Courier, monospace;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography pre code {
+                display: inline;
+                margin: 0;
+                padding: 0;
+                font-size: inherit;
+                font-family: inherit;
+                background: transparent;
+                border: 0;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography blockquote {
+                padding-inline: 0.6em 0;
+                padding-block: 0;
+                border-inline-start: 4px solid rgba(100, 100, 100, 0.2);
+                opacity: 0.85;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a {
+                color: #1677ff;
+                text-decoration: none;
+                outline: none;
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography:focus,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a:focus,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a:hover {
+                color: #69b1ff;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a:active {
+                color: #0958d9;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a:active,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a:hover {
+                text-decoration: none;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography[disabled],
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a[disabled],
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-disabled,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a.ant-typography-disabled {
+                color: rgba(0, 0, 0, 0.25);
+                cursor: not-allowed;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography[disabled]:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a[disabled]:active,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-disabled:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a.ant-typography-disabled:active,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography[disabled]:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a[disabled]:hover,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-disabled:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a.ant-typography-disabled:hover {
+                color: rgba(0, 0, 0, 0.25);
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography[disabled]:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a[disabled]:active,
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography.ant-typography-disabled:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography a.ant-typography-disabled:active {
+                pointer-events: none;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-expand,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-collapse,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-edit,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy {
+                color: #1677ff;
+                text-decoration: none;
+                outline: none;
+                cursor: pointer;
+                transition: color 0.3s;
+                margin-inline-start: 4px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-expand:focus,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-collapse:focus,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-edit:focus,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy:focus,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-expand:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-collapse:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-edit:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy:hover {
+                color: #69b1ff;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-expand:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-collapse:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-edit:active,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy:active {
+                color: #0958d9;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-edit-content {
+                position: relative;
+            }
+
+            div:where(.css-dev-only-do-not-override-mzwlov).ant-typography-edit-content {
+                inset-inline-start: -12px;
+                margin-top: -12px;
+                margin-bottom: calc(1em - 12px);
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-edit-content .ant-typography-edit-content-confirm {
+                position: absolute;
+                inset-inline-end: 10px;
+                inset-block-end: 8px;
+                color: rgba(0, 0, 0, 0.45);
+                font-weight: normal;
+                font-size: 14px;
+                font-style: normal;
+                pointer-events: none;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-edit-content textarea {
+                margin: 0 !important;
+                -moz-transition: none;
+                height: 1em;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy-success,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy-success:hover,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy-success:focus {
+                color: #52c41a;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography .ant-typography-copy-icon-only {
+                margin-inline-start: 0;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis,
+            span:where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis {
+                display: inline-block;
+                max-width: 100%;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-single-line {
+                white-space: nowrap;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis-single-line {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            a:where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis-single-line,
+            span:where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis-single-line {
+                vertical-align: bottom;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis-single-line>code {
+                padding-block: 0;
+                max-width: calc(100% - 1.2em);
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                vertical-align: bottom;
+                box-sizing: content-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-ellipsis-multiple-line {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-typography-rtl {
+                direction: rtl;
+            }
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1yysg6u" data-token-hash="l3dra3"
+        data-cache-path="l3dra3|Spin-Spin|ant-spin|anticon">
+        @media print {
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                    "Noto Color Emoji";
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin::after {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class^="ant-spin"],
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class*=" ant-spin"] {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class^="ant-spin"]::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class*=" ant-spin"]::before,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class^="ant-spin"]::after,
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin [class*=" ant-spin"]::after {
+                box-sizing: border-box;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: #1677ff;
+                font-size: 0;
+                line-height: 1.5714285714285714;
+                list-style: none;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                    "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+                    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                    "Noto Color Emoji";
+                position: absolute;
+                display: none;
+                text-align: center;
+                vertical-align: middle;
+                opacity: 0;
+                transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-spinning {
+                position: static;
+                display: inline-block;
+                opacity: 1;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-text {
+                font-size: 14px;
+                padding-top: 5px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-fullscreen {
+                position: fixed;
+                width: 100vw;
+                height: 100vh;
+                background-color: rgba(0, 0, 0, 0.45);
+                z-index: 1000;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.2s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-fullscreen-show {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-fullscreen .ant-spin-dot .ant-spin-dot-item {
+                background-color: #fff;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-fullscreen .ant-spin-text {
+                color: #fff;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading {
+                position: relative;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin {
+                position: absolute;
+                top: 0;
+                inset-inline-start: 0;
+                z-index: 4;
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-height: 400px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin .ant-spin-dot {
+                position: absolute;
+                top: 50%;
+                inset-inline-start: 50%;
+                margin: -10px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin .ant-spin-text {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                text-shadow: 0 1px 2px #ffffff;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin.ant-spin-show-text .ant-spin-dot {
+                margin-top: -20px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-sm .ant-spin-dot {
+                margin: -7px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-sm .ant-spin-text {
+                padding-top: 2px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-sm.ant-spin-show-text .ant-spin-dot {
+                margin-top: -17px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-lg .ant-spin-dot {
+                margin: -16px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-lg .ant-spin-text {
+                padding-top: 11px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading>div>.ant-spin-lg.ant-spin-show-text .ant-spin-dot {
+                margin-top: -26px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading .ant-spin-container {
+                position: relative;
+                transition: opacity 0.3s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading .ant-spin-container::after {
+                position: absolute;
+                top: 0;
+                inset-inline-end: 0;
+                bottom: 0;
+                inset-inline-start: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                background: #ffffff;
+                opacity: 0;
+                transition: all 0.3s;
+                content: "";
+                pointer-events: none;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading .ant-spin-blur {
+                clear: both;
+                opacity: 0.5;
+                user-select: none;
+                pointer-events: none;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-nested-loading .ant-spin-blur::after {
+                opacity: 0.4;
+                pointer-events: auto;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-tip {
+                color: rgba(0, 0, 0, 0.45);
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot {
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                width: 1em;
+                height: 1em;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-item {
+                position: absolute;
+                display: block;
+                width: 9px;
+                height: 9px;
+                background-color: #1677ff;
+                border-radius: 100%;
+                transform: scale(0.75);
+                transform-origin: 50% 50%;
+                opacity: 0.3;
+                animation-name: css-dev-only-do-not-override-mzwlov-antSpinMove;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: alternate;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-item:nth-child(1) {
+                top: 0;
+                inset-inline-start: 0;
+                animation-delay: 0s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-item:nth-child(2) {
+                top: 0;
+                inset-inline-end: 0;
+                animation-delay: 0.4s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-item:nth-child(3) {
+                inset-inline-end: 0;
+                bottom: 0;
+                animation-delay: 0.8s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-item:nth-child(4) {
+                bottom: 0;
+                inset-inline-start: 0;
+                animation-delay: 1.2s;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin .ant-spin-dot-spin {
+                transform: rotate(45deg);
+                animation-name: css-dev-only-do-not-override-mzwlov-antRotate;
+                animation-duration: 1.2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-sm .ant-spin-dot {
+                font-size: 14px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-sm .ant-spin-dot i {
+                width: 6px;
+                height: 6px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-lg .ant-spin-dot {
+                font-size: 32px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin-lg .ant-spin-dot i {
+                width: 14px;
+                height: 14px;
+            }
+
+            :where(.css-dev-only-do-not-override-mzwlov).ant-spin.ant-spin-show-text .ant-spin-text {
+                display: block;
+            }
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999"
+        data-css-hash="_effect-css-dev-only-do-not-override-mzwlov-antSpinMove">
+        @keyframes css-dev-only-do-not-override-mzwlov-antSpinMove {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999"
+        data-css-hash="_effect-css-dev-only-do-not-override-mzwlov-antRotate">
+        @keyframes css-dev-only-do-not-override-mzwlov-antRotate {
+            to {
+                transform: rotate(405deg);
+            }
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-rc-priority="-999" data-css-hash="1p110zx" data-token-hash="l3dra3"
+        data-cache-path="l3dra3|Table-Table|ant-table|anticon">
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"],
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"]::after,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"]::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class^="ant-table"],
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class^="ant-table"],
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class*=" ant-table"],
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class*=" ant-table"] {
+            box-sizing: border-box;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class^="ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class^="ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class*=" ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class*=" ant-table"]::before,
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class^="ant-table"]::after,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class^="ant-table"]::after,
+        :where(.css-dev-only-do-not-override-mzwlov)[class^="ant-table"] [class*=" ant-table"]::after,
+        :where(.css-dev-only-do-not-override-mzwlov)[class*=" ant-table"] [class*=" ant-table"]::after {
+            box-sizing: border-box;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper {
+            clear: both;
+            max-width: 100%;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper::before {
+            display: table;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper::after {
+            display: table;
+            clear: both;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 0, 0, 0.88);
+            font-size: 14px;
+            line-height: 1.5714285714285714;
+            list-style: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background: #ffffff;
+            border-radius: 8px 8px 0 0;
+            scrollbar-color: rgba(0, 0, 0, 0.25) rgba(5, 5, 5, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table {
+            width: 100%;
+            text-align: start;
+            border-radius: 8px 8px 0 0;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tfoot>tr>td {
+            position: relative;
+            padding: 16px 16px;
+            overflow-wrap: break-word;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-title {
+            padding: 16px 16px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>td {
+            position: relative;
+            color: rgba(0, 0, 0, 0.88);
+            font-weight: 600;
+            text-align: start;
+            background: #fafafa;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s ease;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>th[colspan]:not([colspan="1"]),
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>td[colspan]:not([colspan="1"]) {
+            text-align: center;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+            position: absolute;
+            top: 50%;
+            inset-inline-end: 0;
+            width: 1px;
+            height: 1.6em;
+            background-color: #f0f0f0;
+            transform: translateY(-50%);
+            transition: background-color 0.2s;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead>tr:not(:last-child)>th[colspan] {
+            border-bottom: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td {
+            transition: background 0.2s, border-color 0.2s;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-wrapper:only-child .ant-table,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-wrapper:only-child .ant-table,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table {
+            margin-block: -16px;
+            margin-inline: 32px -16px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td {
+            border-bottom: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:last-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:last-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:last-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>td>.ant-table-expanded-row-fixed>.ant-table-wrapper:only-child .ant-table .ant-table-tbody>tr:last-child>td:last-child {
+            border-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr>th {
+            position: relative;
+            color: rgba(0, 0, 0, 0.88);
+            font-weight: 600;
+            text-align: start;
+            background: #fafafa;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s ease;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-footer {
+            padding: 16px 16px;
+            color: rgba(0, 0, 0, 0.88);
+            background: #fafafa;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination.ant-pagination {
+            margin: 16px 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination>* {
+            flex: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination-left {
+            justify-content: flex-start;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination-center {
+            justify-content: center;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-pagination-right {
+            justify-content: flex-end;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary {
+            position: relative;
+            z-index: 2;
+            background: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary>tr>td {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper div.ant-table-summary {
+            box-shadow: 0 -1px 0 #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters {
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
+            background: #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover::before {
+            background-color: transparent !important;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:focus-visible {
+            color: #1677ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters.ant-table-cell-fix-left:hover,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters.ant-table-cell-fix-right:hover {
+            background: #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-sort {
+            background: #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-thead th.ant-table-column-sort::before {
+            background-color: transparent !important;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper td.ant-table-column-sort {
+            background: #fafafa;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-title {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorters {
+            display: flex;
+            flex: auto;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorters::after {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorters-tooltip-target-sorter::after {
+            content: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter {
+            margin-inline-start: 4px;
+            color: rgba(0, 0, 0, 0.29);
+            font-size: 0;
+            transition: color 0.3s;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter-inner {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter-up,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter-down {
+            font-size: 12px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter-up.active,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter-down.active {
+            color: #1677ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorter .ant-table-column-sorter-up+.ant-table-column-sorter-down {
+            margin-top: -0.3em;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-column-sorters:hover .ant-table-column-sorter {
+            color: rgba(0, 0, 0, 0.57);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-filter-column {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-filter-trigger {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-block: -4px;
+            margin-inline: 4px -8px;
+            padding: 0 4px;
+            color: rgba(0, 0, 0, 0.29);
+            font-size: 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-filter-trigger:hover {
+            color: rgba(0, 0, 0, 0.45);
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-filter-trigger.active {
+            color: #1677ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            color: rgba(0, 0, 0, 0.88);
+            font-size: 14px;
+            line-height: 1.5714285714285714;
+            list-style: none;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+                "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            min-width: 120px;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+                0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-dropdown-menu {
+            max-height: 264px;
+            overflow-x: hidden;
+            border: 0;
+            box-shadow: none;
+            border-radius: unset;
+            background-color: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-dropdown-menu:empty::after {
+            display: block;
+            padding: 8px 0;
+            color: rgba(0, 0, 0, 0.25);
+            font-size: 12px;
+            text-align: center;
+            content: "Not Found";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-tree {
+            padding-block: 8px 0;
+            padding-inline: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-tree .ant-tree {
+            padding: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-tree .ant-tree-treenode .ant-tree-node-content-wrapper:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-tree .ant-tree-treenode-checkbox-checked .ant-tree-node-content-wrapper,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-tree .ant-tree-treenode-checkbox-checked .ant-tree-node-content-wrapper:hover {
+            background-color: #e6f4ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-search {
+            padding: 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-search-input input {
+            min-width: 140px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-search-input .anticon {
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-checkall {
+            width: 100%;
+            margin-bottom: 4px;
+            margin-inline-start: 4px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-table-filter-dropdown-btns {
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 8px;
+            overflow: hidden;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown .ant-checkbox-wrapper+span,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-filter-dropdown-submenu .ant-checkbox-wrapper+span {
+            padding-inline-start: 8px;
+            color: rgba(0, 0, 0, 0.88);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-dropdown .ant-table-filter-dropdown>ul,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-filter-dropdown-submenu>ul {
+            max-height: calc(100vh - 130px);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-title {
+            border: 1px solid #f0f0f0;
+            border-bottom: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container {
+            border-inline-start: 1px solid #f0f0f0;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>td {
+            border-inline-end: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr:not(:last-child)>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr:not(:last-child)>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr:not(:last-child)>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr:not(:last-child)>th {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>th::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>th::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>th::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>th::before {
+            background-color: transparent !important;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>thead>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>thead>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>thead>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>thead>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tfoot>tr>.ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tfoot>tr>.ant-table-cell-fix-right-first::after {
+            border-inline-end: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>td>.ant-table-expanded-row-fixed {
+            margin: -16px -17px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>th>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>th>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>th>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>th>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-content>table>tbody>tr>td>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-header>table>tbody>tr>td>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-body>table>tbody>tr>td>.ant-table-expanded-row-fixed::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-container>.ant-table-summary>table>tbody>tr>td>.ant-table-expanded-row-fixed::after {
+            position: absolute;
+            top: 0;
+            inset-inline-end: 1px;
+            bottom: 0;
+            border-inline-end: 1px solid #f0f0f0;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-scroll-horizontal>.ant-table-container>.ant-table-body>table>tbody>tr.ant-table-expanded-row>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-scroll-horizontal>.ant-table-container>.ant-table-body>table>tbody>tr.ant-table-placeholder>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-scroll-horizontal>.ant-table-container>.ant-table-body>table>tbody>tr.ant-table-expanded-row>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-scroll-horizontal>.ant-table-container>.ant-table-body>table>tbody>tr.ant-table-placeholder>td {
+            border-inline-end: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-middle>.ant-table-container>.ant-table-content>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-middle>.ant-table-container>.ant-table-body>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-middle>.ant-table-container>.ant-table-content>table>tbody>tr>td>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-middle>.ant-table-container>.ant-table-body>table>tbody>tr>td>.ant-table-expanded-row-fixed {
+            margin: -12px -9px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-small>.ant-table-container>.ant-table-content>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-small>.ant-table-container>.ant-table-body>table>tbody>tr>th>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-small>.ant-table-container>.ant-table-content>table>tbody>tr>td>.ant-table-expanded-row-fixed,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered.ant-table-small>.ant-table-container>.ant-table-body>table>tbody>tr>td>.ant-table-expanded-row-fixed {
+            margin: -8px -9px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-bordered>.ant-table-footer {
+            border: 1px solid #f0f0f0;
+            border-top: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell .ant-table-container:first-child {
+            border-top: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-scrollbar:not([rowspan]) {
+            box-shadow: 0 1px 0 1px #fafafa;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-cell-scrollbar {
+            border-inline-end: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-header {
+            border-radius: 8px 8px 0 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container {
+            border-start-start-radius: 0;
+            border-start-end-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container .ant-table-header,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container table {
+            border-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container table>thead>tr:first-child th:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container table>thead>tr:first-child th:last-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container table>thead>tr:first-child td:first-child,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table .ant-table-title+.ant-table-container table>thead>tr:first-child td:last-child {
+            border-radius: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container {
+            border-start-start-radius: 8px;
+            border-start-end-radius: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container table>thead>tr:first-child>*:first-child {
+            border-start-start-radius: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container table>thead>tr:first-child>*:last-child {
+            border-start-end-radius: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-footer {
+            border-radius: 0 0 8px 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-expand-icon-col {
+            width: 48px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-cell {
+            text-align: center;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-cell .ant-table-row-expand-icon {
+            display: inline-flex;
+            float: none;
+            vertical-align: sub;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-indent {
+            height: 1px;
+            float: left;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon {
+            color: inherit;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            float: left;
+            box-sizing: border-box;
+            width: 17px;
+            height: 17px;
+            padding: 0;
+            line-height: 17px;
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            border-radius: 6px;
+            transform: scale(0.9411764705882353);
+            user-select: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:focus,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:hover {
+            color: #69b1ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:active {
+            color: #0958d9;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:focus,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:hover,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon:active {
+            border-color: currentcolor;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon::after {
+            position: absolute;
+            background: currentcolor;
+            transition: transform 0.3s ease-out;
+            content: "";
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon::before {
+            top: 7px;
+            inset-inline-end: 3px;
+            inset-inline-start: 3px;
+            height: 1px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon::after {
+            top: 3px;
+            bottom: 3px;
+            inset-inline-start: 7px;
+            width: 1px;
+            transform: rotate(90deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-collapsed::before {
+            transform: rotate(-180deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-collapsed::after {
+            transform: rotate(0deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-spaced {
+            background: transparent;
+            border: 0;
+            visibility: hidden;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-spaced::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-expand-icon-spaced::after {
+            display: none;
+            content: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-row-indent+.ant-table-row-expand-icon {
+            margin-top: 2.5px;
+            margin-inline-end: 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row:hover>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row:hover>td {
+            background: rgba(0, 0, 0, 0.02);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row .ant-descriptions-view {
+            display: flex;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper tr.ant-table-expanded-row .ant-descriptions-view table {
+            flex: auto;
+            width: auto;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-expanded-row-fixed {
+            position: relative;
+            margin: -16px -16px;
+            padding: 16px 16px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary {
+            position: relative;
+            z-index: 2;
+            background: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-summary>tr>td {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper div.ant-table-summary {
+            box-shadow: 0 -1px 0 #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.25);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder:hover>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody>tr.ant-table-placeholder {
+            background: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-col {
+            width: 32px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-col.ant-table-selection-col-with-dropdown {
+            width: 48px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-selection-col {
+            width: 48px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-selection-col.ant-table-selection-col-with-dropdown {
+            width: 64px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr th.ant-table-selection-column,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr td.ant-table-selection-column,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-column {
+            padding-inline-end: 8px;
+            padding-inline-start: 8px;
+            text-align: center;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr th.ant-table-selection-column .ant-radio-wrapper,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr td.ant-table-selection-column .ant-radio-wrapper,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-column .ant-radio-wrapper {
+            margin-inline-end: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr th.ant-table-selection-column.ant-table-cell-fix-left {
+            z-index: 3;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper table tr th.ant-table-selection-column::after {
+            background-color: transparent !important;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-extra {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-inline-start: 100%;
+            padding-inline-start: 4px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-extra .anticon {
+            color: rgba(0, 0, 0, 0.29);
+            font-size: 12px;
+            vertical-align: baseline;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-selection-extra .anticon:hover {
+            color: rgba(0, 0, 0, 0.57);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody .ant-table-row.ant-table-row-selected>.ant-table-cell {
+            background: #e6f4ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody .ant-table-row.ant-table-row-selected>.ant-table-cell-row-hover {
+            background: #bae0ff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody .ant-table-row>.ant-table-cell-row-hover {
+            background: #fafafa;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-left,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-right {
+            position: sticky !important;
+            z-index: 2;
+            background: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-left-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-left-last::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: -1px;
+            width: 30px;
+            transform: translateX(100%);
+            transition: box-shadow 0.3s;
+            content: "";
+            pointer-events: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-left-all::after {
+            display: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-fix-right-last::after {
+            position: absolute;
+            top: 0;
+            bottom: -1px;
+            left: 0;
+            width: 30px;
+            transform: translateX(-100%);
+            transition: box-shadow 0.3s;
+            content: "";
+            pointer-events: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container {
+            position: relative;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container::before,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container::after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 4;
+            width: 30px;
+            transition: box-shadow 0.3s;
+            content: "";
+            pointer-events: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container::before {
+            inset-inline-start: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-container::after {
+            inset-inline-end: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-left:not(.ant-table-has-fix-left) .ant-table-container::before {
+            box-shadow: inset 10px 0 8px -8px rgba(5, 5, 5, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-left .ant-table-cell-fix-left-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-left .ant-table-cell-fix-left-last::after {
+            box-shadow: inset 10px 0 8px -8px rgba(5, 5, 5, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-left .ant-table-cell-fix-left-last::before {
+            background-color: transparent !important;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-right:not(.ant-table-has-fix-right) .ant-table-container::after {
+            box-shadow: inset -10px 0 8px -8px rgba(5, 5, 5, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-right .ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-ping-right .ant-table-cell-fix-right-last::after {
+            box-shadow: inset -10px 0 8px -8px rgba(5, 5, 5, 0.06);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-fixed-column-gapped .ant-table-cell-fix-left-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-fixed-column-gapped .ant-table-cell-fix-left-last::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-fixed-column-gapped .ant-table-cell-fix-right-first::after,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-fixed-column-gapped .ant-table-cell-fix-right-last::after {
+            box-shadow: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-holder {
+            position: sticky;
+            z-index: 3;
+            background: #ffffff;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-scroll {
+            position: sticky;
+            bottom: 0;
+            height: 8px !important;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            background: rgba(5, 5, 5, 0.06);
+            border-top: 1px solid #f0f0f0;
+            opacity: 0.65;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-scroll:hover {
+            transform-origin: center bottom;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-scroll-bar {
+            height: 8px;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 100px;
+            transition: all 0.3s, transform none;
+            position: absolute;
+            bottom: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-scroll-bar:hover,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-sticky-scroll-bar-active {
+            background-color: rgba(0, 0, 0, 0.88);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            word-break: keep-all;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-left-last,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-right-first {
+            overflow: visible;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-left-last .ant-table-cell-content,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis.ant-table-cell-fix-right-first .ant-table-cell-content {
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-cell-ellipsis .ant-table-column-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-break: keep-all;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle {
+            font-size: 14px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-title,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-footer,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-cell,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle tfoot>tr>td {
+            padding: 12px 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-filter-trigger {
+            margin-inline-end: -4px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-expanded-row-fixed {
+            margin: -12px -8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-tbody .ant-table-wrapper:only-child .ant-table {
+            margin-block: -12px;
+            margin-inline: 40px -8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-middle .ant-table-selection-extra {
+            padding-inline-start: 2px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small {
+            font-size: 14px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-title,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-footer,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-cell,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-thead>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody>tr>td,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small tfoot>tr>th,
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small tfoot>tr>td {
+            padding: 8px 8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-filter-trigger {
+            margin-inline-end: -4px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-expanded-row-fixed {
+            margin: -8px -8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-tbody .ant-table-wrapper:only-child .ant-table {
+            margin-block: -8px;
+            margin-inline: 40px -8px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table.ant-table-small .ant-table-selection-extra {
+            padding-inline-start: 2px;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl {
+            direction: rtl;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl table {
+            direction: rtl;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-pagination-left {
+            justify-content: flex-end;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-pagination-right {
+            justify-content: flex-start;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-row-expand-icon {
+            float: right;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-row-expand-icon::after {
+            transform: rotate(-90deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-row-expand-icon-collapsed::before {
+            transform: rotate(180deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-row-expand-icon-collapsed::after {
+            transform: rotate(0deg);
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-container::before {
+            inset-inline-start: unset;
+            inset-inline-end: 0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-container::after {
+            inset-inline-start: 0;
+            inset-inline-end: unset;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper-rtl .ant-table-container .ant-table-row-indent {
+            float: right;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody-virtual .ant-table-row:not(tr) {
+            display: flex;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody-virtual .ant-table-cell {
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.2s;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-tbody-virtual .ant-table-expanded-row .ant-table-expanded-row-cell.ant-table-expanded-row-cell-fixed {
+            position: sticky;
+            inset-inline-start: 0;
+            overflow: hidden;
+            width: calc(var(--virtual-width) - 1px);
+            border-inline-end: none;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-tbody-virtual:after {
+            content: "";
+            inset-inline: 0;
+            bottom: 0;
+            border-bottom: 1px solid #f0f0f0;
+            position: absolute;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-tbody-virtual .ant-table-cell {
+            border-inline-end: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered .ant-table-tbody-virtual .ant-table-cell.ant-table-cell-fix-right-first:before {
+            content: "";
+            position: absolute;
+            inset-block: 0;
+            inset-inline-start: -1px;
+            border-inline-start: 1px solid #f0f0f0;
+        }
+
+        :where(.css-dev-only-do-not-override-mzwlov).ant-table-wrapper .ant-table-bordered.ant-table-virtual .ant-table-placeholder .ant-table-cell {
+            border-inline-end: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+    </style>
+    <style data-rc-order="prependQueue" data-css-hash="1fstru0" data-token-hash="l3dra3"
+        data-cache-path="l3dra3|ant-design-icons|anticon">
+        .anticon {
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .anticon>* {
+            line-height: 1;
+        }
+
+        .anticon svg {
+            display: inline-block;
+        }
+
+        .anticon .anticon .anticon-icon {
+            display: block;
+        }
+    </style>
+    <style>
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            @pdata {
+                counter-increment: pdata;
+                margin: 20px 0 !important;
+                print-color-adjust: exact !important;
+            }
+
+            .pdatabreak {
+                pdata-break-before: always;
+            }
+
+            .pdatabreak-auto {
+                pdata-break-before: auto;
+            }
+
+            .pdataNumbers {
+                content: counter(pdata);
+            }
+
+            html,
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .ant-table,
+            .ant-table-thead>tr>th,
+            .ant-table-tbody>tr>td {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+        }
+
+        .ant-table-cell {
+            height: 100% !important;
+            padding: 5px !important;
+        }
+
+        .ant-table-container {
+            border-start-start-radius: 0px !important;
+            border-start-end-radius: 0px !important;
+        }
+
+        @media print {
+            .pdatabreak {
+                page-break-before: always;
+            }
+        }
+
+        .ant-table-footer {
+            padding: 8px !important;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/5.16.4/reset.css"
+        integrity="sha512-pZC2IRT+WsRU/IqN5Bhe0rqQVQUOOQhMrChWriipYy+lcncFKe9C+7p+CI2bz+jqlMAxOulcioNxbvZcsD7erw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cam Report</title>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style: ;
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style: ;
+        }
+
+        /* ! tailwindcss v3.4.16 |
+      MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb;
+        }
+
+        ::after,
+        ::before {
+            --tw-content: "";
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif,
+                "Apple
+ Color Emoji", " Segoe UI Emoji", " Segoe UI Symbol",
+ "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit;
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px;
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+        b,
+        strong {
+            font-weight: bolder;
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+                "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em;
+        }
+
+        small {
+            font-size: 80%;
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+        }
+
+        sub {
+            bottom: -0.25em;
+        }
+
+        sup {
+            top: -0.5em;
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse;
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        input:where([type="button"]),
+        input:where([type="reset"]),
+        input:where([type="submit"]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none;
+        }
+
+        :-moz-focusring {
+            outline: auto;
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none;
+        }
+
+        progress {
+            vertical-align: baseline;
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto;
+        }
+
+        [type="search"] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px;
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit;
+        }
+
+        summary {
+            display: list-item;
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+        }
+
+        legend {
+            padding: 0;
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        dialog {
+            padding: 0;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af;
+        }
+
+        [role="button"],
+        button {
+            cursor: pointer;
+        }
+
+        :disabled {
+            cursor: default;
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        [hidden]:where(:not([hidden="until-found"])) {
+            display: none;
+        }
+
+        .fixed {
+            position: fixed;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .bottom-0 {
+            bottom: 0px;
+        }
+
+        .left-0 {
+            left: 0px;
+        }
+
+        .top-0 {
+            top: 0px;
+        }
+
+        .top-20 {
+            top: 5rem;
+        }
+
+        .z-10 {
+            z-index: 10;
+        }
+
+        .col-span-full {
+            grid-column: 1 / -1;
+        }
+
+        .my-4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .mb-1 {
+            margin-bottom: 0.25rem;
+        }
+
+        .ml-0 {
+            margin-left: 0px;
+        }
+
+        .ml-1 {
+            margin-left: 0.25rem;
+        }
+
+        .mt-10 {
+            margin-top: 2.5rem;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+
+        .mt-4 {
+            margin-top: 1rem;
+        }
+
+        .mt-5 {
+            margin-top: 1.25rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .h-12 {
+            height: 3rem;
+        }
+
+        .h-20 {
+            height: 5rem;
+        }
+
+        .h-auto {
+            height: auto;
+        }
+
+        .h-full {
+            height: 100%;
+        }
+
+        .max-h-\[350px\] {
+            max-height: 350px;
+        }
+
+        .max-h-\[400px\] {
+            max-height: 400px;
+        }
+
+        .min-h-\[120px\] {
+            min-height: 120px;
+        }
+
+        .min-h-\[150px\] {
+            min-height: 150px;
+        }
+
+        .w-\[250px\] {
+            width: 250px;
+        }
+
+        .w-\[50\%\] {
+            width: 50%;
+        }
+
+        .w-full {
+            width: 100%;
+        }
+
+        .max-w-\[250px\] {
+            max-width: 250px;
+        }
+
+        .max-w-\[50\%\] {
+            max-width: 50%;
+        }
+
+        .basis-1\/3 {
+            flex-basis: 33.333333%;
+        }
+
+        .basis-2\/3 {
+            flex-basis: 66.666667%;
+        }
+
+        .flex-row {
+            flex-direction: row;
+        }
+
+        .flex-col {
+            flex-direction: column;
+        }
+
+        .items-end {
+            align-items: flex-end;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-end {
+            justify-content: flex-end;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .gap-1 {
+            gap: 0.25rem;
+        }
+
+        .gap-10 {
+            gap: 2.5rem;
+        }
+
+        .gap-2 {
+            gap: 0.5rem;
+        }
+
+        .gap-4 {
+            gap: 1rem;
+        }
+
+        .gap-5 {
+            gap: 1.25rem;
+        }
+
+        .border-t-2 {
+            border-top-width: 2px;
+        }
+
+        .border-black {
+            --tw-border-opacity: 1;
+            border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+        }
+
+        .bg-\[\#a5292a\] {
+            --tw-bg-opacity: 1;
+            background-color: rgb(165 41 42 / var(--tw-bg-opacity, 1));
+        }
+
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+        }
+
+        .p-0 {
+            padding: 0px;
+        }
+
+        .px-1 {
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+        }
+
+        .px-10 {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+        .px-2 {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .py-0\.5 {
+            padding-top: 0.125rem;
+            padding-bottom: 0.125rem;
+        }
+
+        .py-1 {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .py-24 {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+
+        .py-4 {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-\[10\.5px\] {
+            font-size: 10.5px;
+        }
+
+        .text-\[10px\] {
+            font-size: 10px;
+        }
+
+        .text-\[9px\] {
+            font-size: 9px;
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .text-\[\#0000\] {
+            color: #0000;
+        }
+
+        .text-black {
+            --tw-text-opacity: 1;
+            color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+        }
+
+        .underline {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mangal-pdf-report">
+        <section class="col-span-full flex flex-col gap-4 min-h-[120px] px-6 py-24">
+            <table class="print-component flex flex-col">
+                <thead class="w-full fixed top-0 z-10 bg-white left-0 px-4 h-20">
+                    <tr class="w-full flex">
+                        <th class="flex items-center justify-between bg-white py-4 relative w-full">
+                            <img class="h-12" src="https://www.mangalfincorp.com/img/logo/logo.png" alt="logo" /><span
+                                class="ant-typography text-xl text-medium text-center text-black css-dev-only-do-not-override-mzwlov">Mangal
+                                Credit and Fincorp Limited</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="flex absolute top-20 w-full left-0">
+                    <tr>
+                        <td class="absolute w-full px-2">
+                            <div>
+                                <div class="flex gap-1 py-1">
+                                    <div class="flex flex-col w-full text-white">
+                                        <h1
+                                            class="w-full h-auto flex justify-center items-center gap-1 bg-[#a5292a] font-bold text-white text-xs py-0.5">
+                                            Borrower Details <span class="text-[10px]"> (to be picked up from the In
+                                                Progress Stage after the application is logged in)</span>
+                                        </h1>
+                                        <div class="ant-table-wrapper w-full css-dev-only-do-not-override-mzwlov">
+                                            <div class="ant-spin-nested-loading css-dev-only-do-not-override-mzwlov">
+                                                <div class="ant-spin-container">
+                                                    <div
+                                                        class="ant-table ant-table-bordered css-dev-only-do-not-override-mzwlov">
+                                                        <div class="ant-table-container">
+                                                            <div class="ant-table-content">
+                                                                <table style="table-layout: auto">
+                                                                    <colgroup></colgroup>
+                                                                    <tbody class="ant-table-tbody"
+                                                                        th:each="borrower : ${borrowerDetails}">
+                                                                        <tr
+                                                                            class="ant-table-row ant-table-row-level-0 text-[9px]">
+                                                                            <td class="ant-table-cell">
+                                                                                <h1 class="font-bold text-[9px]"
+                                                                                    th:text="${borrower.label}">
+                                                                                </h1>
+                                                                            </td>
+                                                                            <td class="ant-table-cell"
+                                                                                th:text="${borrower.value}">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pdatabreak relative top-20 w-full left-0">
+                                <div>
+                                    <div class="flex gap-1 py-1">
+                                        <div class="flex flex-col w-full text-white">
+                                            <h1
+                                                class="w-full h-auto flex justify-center items-center gap-1 bg-[#a5292a] font-bold text-white text-xs py-0.5">
+                                                Valuation Details <span class="text-[10px]"></span>(to be picked up from
+                                                the In Progress Stage after the application is logged in)</span>
+                                            </h1>
+                                            <div class="ant-table-wrapper w-full css-dev-only-do-not-override-mzwlov">
+                                                <div
+                                                    class="ant-spin-nested-loading css-dev-only-do-not-override-mzwlov">
+                                                    <div class="ant-spin-container">
+                                                        <div
+                                                            class="ant-table ant-table-bordered css-dev-only-do-not-override-mzwlov">
+                                                            <div class="ant-table-container">
+                                                                <div class="ant-table-content">
+                                                                    <table style="table-layout: auto">
+                                                                        <colgroup></colgroup>
+                                                                        <tbody class="ant-table-tbody"
+                                                                            th:each="valuation : ${valuationDetails}">
+                                                                            <tr
+                                                                                class="ant-table-row ant-table-row-level-0 text-[9px]">
+                                                                                <td class="ant-table-cell">
+                                                                                    <h1 class="font-bold text-[9px]"
+                                                                                        th:text="${valuation.label}">
+                                                                                    </h1>
+                                                                                </td>
+                                                                                <td class="ant-table-cell"
+                                                                                    th:text="${valuation.value}">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot class="table-footer w-full fixed bottom-0 left-0 z-10 bg-white px-2">
+                    <tr>
+                        <td>
+                            <p class="text-[10px] flex justify-end mb-1 underline">
+                                Borrower Signature
+                            </p>
+                            <div class="flex justify-between flex-col border-t-2 border-black py-1">
+                                <p class="text-[10px]">
+                                    <strong class="underline">Branch:</strong><span>DHARAVI</span><strong
+                                        class="underline ml-1">Branch Address:</strong><span>NA, NA, NA,
+                                        Mumbai-400063</span>
+                                </p>
+                                <p class="text-[10px]">
+                                    <strong class="underline ml-0">Phone:</strong><span>9867566700</span><strong
+                                        class="underline ml-1">Email:</strong><span>dharavi@mangalfincorp.com</span><strong
+                                        class="underline ml-1">GST NO:</strong><span>27AAACT4015F1ZQ</span>
+                                </p>
+                                <p class="text-[10px]">
+                                    <strong class="underline ml-0">Regd. Office:</strong><span>1701/1702, 17th Floor,
+                                        A-wing, Lotus Corporate Park,
+                                        Western Express Highway, Goregoan (E), Mumbai - 400
+                                        063</span>
+                                </p>
+                                <p class="text-[10px]">
+                                    <strong class="underline ml-0">HO GST NO
+                                        :</strong><span>27AAACT4015F1ZQ</span><strong class="underline ml-0 ml-1">CIN
+                                        :</strong><span>L65990MG1967PLC012227/CeR.</span>
+                                </p>
+                                <p class="text-[10px] my-4">
+                                    For any help or assistance call on our customer grievance
+                                    number:<strong>02242461300</strong>or E-mail us on
+                                    <strong>customercare@mangalfincorp.com</strong>. Please
+                                    refer to our Website
+                                    <strong>www.mangalfincorp.com</strong>for Fair Practice Code
+                                    and MITC or visit our nearest branch for more details
+                                </p>
+                                <span class="pdataNumbers"></span>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>
