@@ -37,6 +37,23 @@ public class ExternalApiConnect {
       String url,
       Object requestBody,
       Map<String, Object> httpHeaders,
+      Class<T> responseClass) {
+    try {
+      ResponseEntity<T> response =
+          restTemplate.exchange(
+              url, method, new HttpEntity<>(requestBody, getHeaders(httpHeaders)), responseClass);
+
+      return convertToBaseResponse(response);
+    } catch (Exception exception) {
+      return handleException(url, exception);
+    }
+  }
+
+  public static <T> BaseResponse<T> restExternalConnect(
+      HttpMethod method,
+      String url,
+      Object requestBody,
+      Map<String, Object> httpHeaders,
       ParameterizedTypeReference<T> responseType) {
     try {
       ResponseEntity<T> response =
