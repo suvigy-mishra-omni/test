@@ -1,25 +1,28 @@
 package com.example.test.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.stereotype.Service;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.context.Context;
-import org.thymeleaf.spring6.SpringTemplateEngine;
-import org.thymeleaf.spring6.dialect.SpringStandardDialect;
-import org.thymeleaf.templateresolver.StringTemplateResolver;
-
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+import org.apache.commons.lang3.time.DateUtils;
+import org.springframework.stereotype.Service;
+import org.thymeleaf.TemplateEngine;
+import org.thymeleaf.context.Context;
+import org.thymeleaf.spring6.SpringTemplateEngine;
+import org.thymeleaf.templateresolver.StringTemplateResolver;
 
 @Service
 public class TestService2 {
   public TestService2() throws IOException {
-    test();
+    String date = "2025-06-10T18:30:00.000Z";
+    try {
+      String[] patterns = {"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"};
+      DateUtils.parseDate(date, patterns).getTime();
+
+    } catch (Exception e) {
+      System.out.println("error => " + e.getMessage());
+    }
   }
 
   public void test() throws IOException {
