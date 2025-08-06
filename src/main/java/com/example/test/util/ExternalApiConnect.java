@@ -16,10 +16,10 @@ import org.springframework.web.client.RestTemplate;
 public class ExternalApiConnect {
   private static final RestTemplate restTemplate = new RestTemplate();
 
-  public static <Response> BaseResponse<Response> restExternalConnect(
+  public static <T> BaseResponse<T> restExternalConnect(
       HttpMethod method, String url, Object requestBody, Map<String, Object> httpHeaders) {
     try {
-      ResponseEntity<Response> response =
+      ResponseEntity<T> response =
           restTemplate.exchange(
               url,
               method,
@@ -32,14 +32,31 @@ public class ExternalApiConnect {
     }
   }
 
-  public static <Response> BaseResponse<Response> restExternalConnect(
+  public static <T> BaseResponse<T> restExternalConnect(
+      HttpMethod method,
+      String url,
+      Object requestBody,
+      Map<String, Object> httpHeaders,
+      ParameterizedTypeReference<T> responseType) {
+    try {
+      ResponseEntity<T> response =
+          restTemplate.exchange(
+              url, method, new HttpEntity<>(requestBody, getHeaders(httpHeaders)), responseType);
+
+      return convertToBaseResponse(response);
+    } catch (Exception exception) {
+      return handleException(url, exception);
+    }
+  }
+
+  public static <T> BaseResponse<T> restExternalConnect(
       HttpMethod method,
       String url,
       Object requestBody,
       Map<String, Object> httpHeaders,
       Map<String, Object> params) {
     try {
-      ResponseEntity<Response> response =
+      ResponseEntity<T> response =
           restTemplate.exchange(
               url,
               method,
